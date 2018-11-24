@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/miurayasunari/helloworld/issues"
   },
-  "homepage": "https://github.com/miurayasunari/helloworld#readme"
+  "homepage": "https://github.com/miurayasunari/helloworld#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
