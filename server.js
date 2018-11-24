@@ -1,13 +1,6 @@
-var http = require('http');
-
-var port = 3000;
-var server = http.createServer(function(req, res) {
-	console.log('Connected');
-	res.statudCode = 200;
-	res.setHeader('Content-Type', 'text/plain');
-	res.end('Hello World! by yasunari\n');
-});
-
-server.listen(port, function() {
-	console.log('server running');
-});
+var http = require('http')
+var port = process.env.PORT || 3000;
+http.createServer(function(req, res) {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello World by yasunari\n');
+}).listen(port);
